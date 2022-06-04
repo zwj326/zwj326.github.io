@@ -126,9 +126,9 @@
       
         <tags>
             
-            <tag> Jwt </tag>
-            
             <tag> SpringBoot </tag>
+            
+            <tag> Jwt </tag>
             
             <tag> Token </tag>
             
@@ -246,11 +246,11 @@
             
             <tag> java </tag>
             
-            <tag> SpringBoot </tag>
-            
             <tag> SpringSecurity </tag>
             
             <tag> 微框架 </tag>
+            
+            <tag> SpringBoot </tag>
             
         </tags>
       
