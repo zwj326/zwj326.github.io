@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Space空中的博客</title>
+  
+  
+  <link href="http://zwj326.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://zwj326.github.io/"/>
+  <updated>2022-06-03T21:14:54.282Z</updated>
+  <id>http://zwj326.github.io/</id>
+  
+  <author>
+    <name>Space空中</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客部署到服务器上</title>
+    <link href="http://zwj326.github.io/2022/06/03/hexo-bu-shu-dao-fu-wu-qi/"/>
+    <id>http://zwj326.github.io/2022/06/03/hexo-bu-shu-dao-fu-wu-qi/</id>
+    <published>2022-06-03T14:26:42.000Z</published>
+    <updated>2022-06-03T21:14:54.282Z</updated>
+    
+    
+    <summary type="html">把Hexo部署到服务器</summary>
+    
+    
+    
+    <category term="博客趣事" scheme="http://zwj326.github.io/categories/%E5%8D%9A%E5%AE%A2%E8%B6%A3%E4%BA%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://zwj326.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java多线程总结</title>
+    <link href="http://zwj326.github.io/2022/06/03/java-duo-xian-cheng-zong-jie/"/>
+    <id>http://zwj326.github.io/2022/06/03/java-duo-xian-cheng-zong-jie/</id>
+    <published>2022-06-03T05:26:04.000Z</published>
+    <updated>2022-06-03T21:14:43.947Z</updated>
+    
+    
+    <summary type="html">Java多线程面试总结</summary>
+    
+    
+    
+    <category term="多线程" scheme="http://zwj326.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    
+    <category term="java" scheme="http://zwj326.github.io/tags/java/"/>
+    
+    <category term="面经" scheme="http://zwj326.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TCP的三次握手与四次挥手</title>
+    <link href="http://zwj326.github.io/2022/06/03/tcp-de-san-ci-wo-shou-yu-si-ci-hui-shou/"/>
+    <id>http://zwj326.github.io/2022/06/03/tcp-de-san-ci-wo-shou-yu-si-ci-hui-shou/</id>
+    <published>2022-06-02T17:44:42.000Z</published>
+    <updated>2022-06-03T21:14:34.026Z</updated>
+    
+    
+    <summary type="html">TCP的单词握手和四次挥手原理分析</summary>
+    
+    
+    
+    <category term="学科基础" scheme="http://zwj326.github.io/categories/%E5%AD%A6%E7%A7%91%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="计算机网络" scheme="http://zwj326.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="TCP" scheme="http://zwj326.github.io/tags/TCP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 2.0 与HTTP1.1的差别</title>
+    <link href="http://zwj326.github.io/2022/05/27/http-2.0-yu-http1.1-de-chai-bie/"/>
+    <id>http://zwj326.github.io/2022/05/27/http-2.0-yu-http1.1-de-chai-bie/</id>
+    <published>2022-05-27T05:26:42.000Z</published>
+    <updated>2022-06-03T21:14:19.063Z</updated>
+    
+    
+    <summary type="html">各HTTP版本之间的区别</summary>
+    
+    
+    
+    <category term="学科基础" scheme="http://zwj326.github.io/categories/%E5%AD%A6%E7%A7%91%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="HTTP" scheme="http://zwj326.github.io/tags/HTTP/"/>
+    
+    <category term="计算机网络" scheme="http://zwj326.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jwt基本原理</title>
+    <link href="http://zwj326.github.io/2022/05/27/jwt-ji-chu-yuan-li/"/>
+    <id>http://zwj326.github.io/2022/05/27/jwt-ji-chu-yuan-li/</id>
+    <published>2022-05-27T05:26:42.000Z</published>
+    <updated>2022-06-03T21:14:08.548Z</updated>
+    
+    
+    <summary type="html">Jwt基本组成和前端实现</summary>
+    
+    
+    
+    <category term="安全组件" scheme="http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/"/>
+    
+    
+    <category term="Jwt" scheme="http://zwj326.github.io/tags/Jwt/"/>
+    
+    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
+    
+    <category term="Token" scheme="http://zwj326.github.io/tags/Token/"/>
+    
+    <category term="Vue" scheme="http://zwj326.github.io/tags/Vue/"/>
+    
+    <category term="Api" scheme="http://zwj326.github.io/tags/Api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx反向代理--负载均衡</title>
+    <link href="http://zwj326.github.io/2022/05/27/nginx-fan-xiang-dai-li-fu-zai-jun-heng/"/>
+    <id>http://zwj326.github.io/2022/05/27/nginx-fan-xiang-dai-li-fu-zai-jun-heng/</id>
+    <published>2022-05-27T05:26:42.000Z</published>
+    <updated>2022-06-03T21:13:39.212Z</updated>
+    
+    
+    <summary type="html">nginx反向代理原理及四种负载均衡方法</summary>
+    
+    
+    
+    <category term="服务器" scheme="http://zwj326.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="Ngnix" scheme="http://zwj326.github.io/tags/Ngnix/"/>
+    
+    <category term="服务器部署" scheme="http://zwj326.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="反向代理" scheme="http://zwj326.github.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kafka基本原理</title>
+    <link href="http://zwj326.github.io/2022/05/27/kafka-ji-ben-yuan-li/"/>
+    <id>http://zwj326.github.io/2022/05/27/kafka-ji-ben-yuan-li/</id>
+    <published>2022-05-27T05:26:42.000Z</published>
+    <updated>2022-06-03T21:13:26.184Z</updated>
+    
+    
+    <summary type="html">Kafka基本概念及面试问题</summary>
+    
+    
+    
+    <category term="服务器" scheme="http://zwj326.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="kafka" scheme="http://zwj326.github.io/tags/kafka/"/>
+    
+    <category term="分布式" scheme="http://zwj326.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+    <category term="消息中间件" scheme="http://zwj326.github.io/tags/%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>页面置换算法</title>
+    <link href="http://zwj326.github.io/2022/05/27/ye-mian-zhi-huan-suan-fa/"/>
+    <id>http://zwj326.github.io/2022/05/27/ye-mian-zhi-huan-suan-fa/</id>
+    <published>2022-05-27T05:26:42.000Z</published>
+    <updated>2022-06-03T21:13:12.270Z</updated>
+    
+    
+    <summary type="html">关于4种页面置换算法的计算过程</summary>
+    
+    
+    
+    <category term="学科基础" scheme="http://zwj326.github.io/categories/%E5%AD%A6%E7%A7%91%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="操作系统" scheme="http://zwj326.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="内存管理" scheme="http://zwj326.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringSecurity工作原理</title>
+    <link href="http://zwj326.github.io/2022/05/25/springsecurity-de-gong-zuo-yuan-li/"/>
+    <id>http://zwj326.github.io/2022/05/25/springsecurity-de-gong-zuo-yuan-li/</id>
+    <published>2022-05-25T05:26:42.000Z</published>
+    <updated>2022-06-03T21:12:52.793Z</updated>
+    
+    
+    <summary type="html">SpringSecurity基本原理和源码分析</summary>
+    
+    
+    
+    <category term="安全组件" scheme="http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/"/>
+    
+    
+    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
+    
+    <category term="java" scheme="http://zwj326.github.io/tags/java/"/>
+    
+    <category term="SpringSecurity" scheme="http://zwj326.github.io/tags/SpringSecurity/"/>
+    
+    <category term="微框架" scheme="http://zwj326.github.io/tags/%E5%BE%AE%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+</feed>

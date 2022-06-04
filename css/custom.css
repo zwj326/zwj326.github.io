@@ -1,0 +1,316 @@
+/* SAOUI字体精简包，仅73KB */
+@font-face{
+  font-family: 'SAOUI';
+  /*src: url('https://npm.elemecdn.com/akilar-candyassets/fonts/SAOUI.ttf');*/
+  font-display: swap;
+}
+/* 应用于除了作者卡片以为的所有侧栏卡片 */
+.card-widget:not(.card-info) {
+  overflow: visible !important;
+  margin-top: 45px !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px !important;
+  font-family: 'SAOUI';
+  color: rgba(60,60,61,0.7);
+  font-weight: bold;
+}
+/* 修复一下对侧栏电子钟的覆盖 */
+.card-widget.card-clock {
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  margin-top: 0px !important;
+}
+/* 定义标题栏的定位方式为绝对定位 */
+.item-headline {
+  font-family: 'SAOUI';
+  color: rgba(60,60,61,0.7);
+  font-weight: bold;
+  position: absolute;
+  z-index: 4;
+  height: 27px;
+  width: 65%;
+  top: -27px;
+  left: 7px;
+}
+/* 标题栏下各元素的层级，保证它们能显示在伪类之上 */
+.item-headline i {
+  position: relative;
+  top: 0px;
+  margin-left: 5%;
+  z-index: 2;
+}
+.item-headline span {
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+.item-headline a {
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+/* 梯形伪类 */
+.item-headline:after {
+  content: '';
+  position: absolute;
+  top: -3px; /*卡片顶部突起上下偏移量*/
+  right: 0;
+  bottom: 0;
+  left: -3px; /*卡片顶部突起左右偏移量*/
+  z-index: 1;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.9);
+  border-bottom: 0 solid #fff;
+  /* 关键形变 */
+  transform: perspective(20px) rotateX(3deg);
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+}
+/* 下划线伪类 */
+.item-headline:before {
+  display: block;
+  width: 140%;
+  margin-top: 2px;
+  height: 2px;
+  content: '';
+  background: rgba(160,159,160,0.9);
+  border-radius: 5px;
+  top: 40px;
+  left: 0;
+  position: relative;
+}
+/* 针对手机样式的偏移量调整 */
+@media screen and (max-width: 800px) {
+  .item-headline {
+    left: 8px;
+  }
+}
+/* 夜间模式色彩适配，此处仅代表糖果屋夜间模式配色 */
+[data-theme="dark"] .card-widget:not(.card-info) {
+  color: rgba(255,255,255,0.7) !important;
+}
+[data-theme="dark"] .item-headline {
+  color: rgba(255,255,255,0.7) !important;
+}
+[data-theme="dark"] .item-headline:after {
+  background: rgba(32,32,32,0.6);
+  border: 1px solid rgba(32,32,32,0.6);
+  border-bottom: 0 solid rgba(32,32,32,0.6);
+}
+[data-theme="dark"] .item-headline:before {
+  background: rgba(255,255,255,0.9);
+}
+
+@font-face{
+  font-family:'Candyhome' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+.s-sticker{
+  font-weight:bold;
+}
+
+.search>span{
+  font-weight:bold;
+}
+/*h1,h2,h3,h4,h5,h6 {
+  font-family: 'Candyhome', sans-serif;
+}*/
+
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+    background:rgba(35,35,35, 0.6);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+  background:rgba(35,35,35, 0.6)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+  background: rgba(35,35,35, 0.6);
+}
+/* 分页页面 */
+div#page{
+  background: rgba(35,35,35, 0.6);
+}
+/* 归档页面 */
+div#archive{
+  background: rgba(35,35,35, 0.6);
+}
+/* 标签页面 */
+div#tag{
+  background: rgba(35,35,35, 0.6);
+}
+/* 分类页面 */
+div#category{
+  background: rgba(35,35,35, 0.6);
+}
+
+/*#footer{
+  opacity: 0.6;
+}
+*/
+/* 页脚透明 */
+/*#footer{
+  background: transparent!important;
+}*/
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before{
+    background: transparent!important;
+  }
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/* 头图遮罩层透明 */
+#page-header::before{
+  background: transparent!important;
+  }
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+#fixedElement{
+  position: fixed;
+  width: 60px
+  /* 假定宽度是60px */
+  bottom: 60px;
+  /* 定义元素下边框与浏览器下边框的距离 */
+  left: -30px;
+  /* 定义元素左边框与浏览器左边框的距离 */
+  /* 此时效果上此按钮应当缩进侧栏一半 */
+}
+
+#fixedElement:hover{
+  left: 0px;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(35,35,35, 0.6)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(35,35,35, 0.6)!important;
+    }
+
+.read-mode #aside-content .card-widget{
+      background: rgba(158, 204, 171, 0.6)!important;
+    }
+.read-mode div#post{
+    background: rgba(158, 204, 171, 0.6)!important;
+    }
+
+
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(35,35,35, 0.6)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(35,35,35, 0.6)!important;
+      color: #ffffff;
+      }
+
+
+
+/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 1s 1 ease-in-out;
+    animation: imgblur 1s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+
+/*鼠标*/
+
+/* 全局默认鼠标指针 */
+body,
+html{
+  cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/arrow.cur'),auto !important;
+}
+/* 悬停图片时的鼠标指针 */
+img{
+  cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/btn.cur'),auto !important;
+}
+/* 选择链接标签时的鼠标指针 */
+a:hover{
+    cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/link.cur'),auto;
+}
+/* 选中输入框时的鼠标指针 */
+input:hover{
+    cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/input.cur'),auto;
+}
+textarea:hover{
+    cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/input.cur'),auto;
+}
+/* 悬停按钮时的鼠标指针 */
+button:hover{
+    cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/btn.cur'),auto;
+}
+/* 悬停列表标签时的鼠标指针 */
+i:hover{
+    cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/link.cur'),auto;
+}
+/* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 */
+#footer-wrap a:hover{
+      cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/hf.cur'),auto;
+}
+/* 悬停页码时的鼠标指针 */
+#pagination .page-number:hover{
+      cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/i.cur'),auto;
+}
+/* 悬停菜单栏时的鼠标指针 */
+#nav .site-page:hover{
+      cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/hf.cur'),auto;
+}
