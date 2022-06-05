@@ -1,3 +1,7 @@
+.el-input__count{
+    background: rgba(0,0,0,0) !important;
+}
+
 /* 调整表情大小 */
 .OwO .OwO-body .OwO-items-image .OwO-item {
     max-width: calc(25% - 10px) !important;

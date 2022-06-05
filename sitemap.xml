@@ -149,6 +149,20 @@
   </url>
   
   <url>
+    <loc>http://zwj326.github.io/tags/%E9%9D%A2%E7%BB%8F/</loc>
+    <lastmod>2022-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://zwj326.github.io/tags/java/</loc>
+    <lastmod>2022-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://zwj326.github.io/tags/Jwt/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -184,14 +198,14 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/%E9%9D%A2%E7%BB%8F/</loc>
+    <loc>http://zwj326.github.io/tags/SpringSecurity/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/java/</loc>
+    <loc>http://zwj326.github.io/tags/%E5%BE%AE%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -260,20 +274,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://zwj326.github.io/tags/SpringSecurity/</loc>
-    <lastmod>2022-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://zwj326.github.io/tags/%E5%BE%AE%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2022-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -291,14 +291,14 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/</loc>
+    <loc>http://zwj326.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
