@@ -1,3 +1,10 @@
+.wl-panel{
+    background: rgba(0,0,0,0) !important;
+}
+.wl-input{
+  background: rgba(0,0,0,0) !important;
+}
+
 /* SAOUI字体精简包，仅73KB */
 @font-face{
   font-family: 'SAOUI';
