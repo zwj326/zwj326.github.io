@@ -20,16 +20,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/posts/7e93f93b.html</loc>
-    
-    <lastmod>2022-06-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://zwj326.github.io/posts/2f0e.html</loc>
+    <loc>http://zwj326.github.io/posts/daba930f.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
@@ -56,7 +47,16 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/posts/daba930f.html</loc>
+    <loc>http://zwj326.github.io/posts/2f0e.html</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://zwj326.github.io/posts/7e93f93b.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/comments/index.html</loc>
+    <loc>http://zwj326.github.io/link/index.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/link/index.html</loc>
+    <loc>http://zwj326.github.io/tags/index.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/index.html</loc>
+    <loc>http://zwj326.github.io/comments/index.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
@@ -149,28 +149,14 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/TCP/</loc>
+    <loc>http://zwj326.github.io/tags/%E9%9D%A2%E7%BB%8F/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/kafka/</loc>
-    <lastmod>2022-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://zwj326.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</loc>
-    <lastmod>2022-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://zwj326.github.io/tags/%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <loc>http://zwj326.github.io/tags/java/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -233,14 +219,28 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/%E9%9D%A2%E7%BB%8F/</loc>
+    <loc>http://zwj326.github.io/tags/kafka/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/tags/java/</loc>
+    <loc>http://zwj326.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</loc>
+    <lastmod>2022-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://zwj326.github.io/tags/%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2022-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://zwj326.github.io/tags/TCP/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -291,7 +291,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>http://zwj326.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -305,7 +305,7 @@
   </url>
   
   <url>
-    <loc>http://zwj326.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>http://zwj326.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
