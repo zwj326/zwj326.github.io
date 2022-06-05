@@ -78,3 +78,7 @@ document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
       return (false);
     }
 }
+
+document.oncontextmenu = function(){
+  return false;
+}
