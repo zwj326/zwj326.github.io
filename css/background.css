@@ -1,0 +1,15 @@
+/*#web_bg {
+ background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"),
+    -moz-linear-gradient(45deg, #66CCFF 15%, #66FFCC 85%);
+  background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"),
+    -webkit-linear-gradient(45deg, #66CCFF 15%, #66FFCC 85%);
+  background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"),
+    -ms-linear-gradient(45deg, #66CCFF 15%, #66FFCC 85%);
+  background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"),
+    linear-gradient(45deg, #66CCFF 15%, #66FFCC 85%);
+}*/
+
+
+#web_bg {
+    background: linear-gradient(to right bottom, rgb(0, 255, 240), rgb(92, 159, 247) 40%, rgb(211, 34, 255) 80%);
+}
