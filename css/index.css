@@ -5432,7 +5432,7 @@ div#quit-box {
   --pagenumber-current-color: #1e7ee2;
   --pagenumber-current-shadow-color: #104477;
   --pagenumber-hover-color: #1e7ee2;
-  --pagenumber-background-color: rgba(0,0,0,0.5);
+  --pagenumber-background-color: rgba(120,120,120,0.85);
 }
 #pagination .pagination {
   margin-top: 20px;
