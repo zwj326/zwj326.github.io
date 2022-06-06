@@ -113,9 +113,9 @@
     <category term="安全组件" scheme="http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/"/>
     
     
-    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
-    
     <category term="Jwt" scheme="http://zwj326.github.io/tags/Jwt/"/>
+    
+    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
     
     <category term="Token" scheme="http://zwj326.github.io/tags/Token/"/>
     
@@ -207,13 +207,13 @@
     <category term="安全组件" scheme="http://zwj326.github.io/categories/%E5%AE%89%E5%85%A8%E7%BB%84%E4%BB%B6/"/>
     
     
+    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
+    
     <category term="java" scheme="http://zwj326.github.io/tags/java/"/>
     
     <category term="SpringSecurity" scheme="http://zwj326.github.io/tags/SpringSecurity/"/>
     
     <category term="微框架" scheme="http://zwj326.github.io/tags/%E5%BE%AE%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="SpringBoot" scheme="http://zwj326.github.io/tags/SpringBoot/"/>
     
   </entry>
   
