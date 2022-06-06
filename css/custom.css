@@ -1,16 +1,3 @@
-@media screen and (max-width:600px){
-            body.position-fixed {
-              position: fixed;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              overflow: hidden;
-            }
-        }
-        
-
-
 /*定义滑块 内阴影+圆角*/  
 ::-webkit-scrollbar-thumb {
     background-color: #49b1f5;
@@ -27,7 +14,7 @@
     border-radius: 2em;
 }
 
-svg.icon.festival-decoration {
+/*svg.icon.festival-decoration {
     width: 3em;
     height: 3em;
     left: 2em;
@@ -57,7 +44,7 @@ svg.icon.festival-decoration {
     transform: rotate(-20deg);
     transform-origin: center top;
   }
-}
+}*/
 
 
 .copyright {
