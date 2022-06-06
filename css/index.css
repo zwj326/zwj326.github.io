@@ -6752,14 +6752,22 @@ mjx-container[display],
 }
 @media screen and (max-width: 800px) {
   #web_bg {
-    background: url("https://cdn.zwj326.space/MyBlog/subshine.jpg") !important;
+    background: -webkit-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -moz-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -o-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -ms-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: linear-gradient(to right bottom, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
   [data-theme="dark"] #web_bg {
-    background: url("https://cdn.zwj326.space/MyBlog/nightroom.jpg") !important;
+    background: -webkit-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -moz-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -o-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: -ms-linear-gradient(left top, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
+    background: linear-gradient(to right bottom, #00fff0, #5c9ff7 40%, #d322ff 80%) !important;
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
