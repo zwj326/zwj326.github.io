@@ -4973,7 +4973,7 @@ div#quit-box {
   top: -60px;
   left: 0;
   height: auto;
-  width: 100vw;
+  width: 100%;
   -webkit-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
   -moz-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
   -o-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);

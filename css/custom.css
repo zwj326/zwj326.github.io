@@ -282,9 +282,13 @@ div#category{
 /*鼠标*/
 
 /* 全局默认鼠标指针 */
+/*html{
+  overflow-y: overlay;
+}*/
 body,
 html{
-  overflow-x: hidden;
+
+/*  overflow-x: overlay;*/
   cursor: url('https://npm.elemecdn.com/akilar-candyassets/cur/arrow.cur'),auto !important;
 }
 /* 悬停图片时的鼠标指针 */
