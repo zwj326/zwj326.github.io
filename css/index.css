@@ -6745,9 +6745,26 @@ mjx-container[display],
 }
 [data-theme="dark"] #web_bg {
   background: url("https://cdn.zwj326.space/MyBlog/nightroom.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-[data-theme="dark"] #web_bg {
-  background: url("https://cdn.zwj326.space/MyBlog/nightroom.jpg") !important;
+@media screen and (max-width: 800px) {
+  #web_bg {
+    background: url("https://cdn.zwj326.space/MyBlog/subshine.jpg") !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  [data-theme="dark"] #web_bg {
+    background: url("https://cdn.zwj326.space/MyBlog/nightroom.jpg") !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
 }
 #article-container .btn-center {
   margin: 0 0 20px;
