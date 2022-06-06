@@ -1,9 +1,12 @@
 @media screen and (max-width:600px){
-            .compatible-ios{overflow: hidden;height: 40px;}
-            ul{overflow-x: auto;width: 300px;height: 30px;white-space: nowrap;padding-bottom: 10px;}
-            ul::-webkit-scrollbar{width: 0px;height: 0px;}
-            li{list-style: none;padding: 2px 4px;background: rgba(1,1,1,.05);border-radius: 4px;margin: 0 6px 8px 0;display: inline-block;font-size: 12px;}
-
+            body.position-fixed {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              overflow: hidden;
+            }
         }
         
 
