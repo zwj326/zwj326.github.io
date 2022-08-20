@@ -83,6 +83,15 @@
   </url>
   
   <url>
+    <loc>http://zwj326.github.io/link/index.html</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://zwj326.github.io/comments/index.html</loc>
     
     <lastmod>2022-06-05</lastmod>
@@ -102,15 +111,6 @@
   
   <url>
     <loc>http://zwj326.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-06-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://zwj326.github.io/link/index.html</loc>
     
     <lastmod>2022-06-05</lastmod>
     
