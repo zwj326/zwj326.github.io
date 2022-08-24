@@ -1,3 +1,13 @@
+@font-face{
+  font-family:'Menlo' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Menlo.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+* {
+  font-family: 'Menlo', sans-serif;
+}
+
 /*定义滑块 内阴影+圆角*/  
 ::-webkit-scrollbar-thumb {
     background-color: #49b1f5;
