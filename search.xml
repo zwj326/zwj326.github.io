@@ -110,33 +110,6 @@
     
     
     <entry>
-      <title>页面置换算法</title>
-      <link href="/posts/1b3c8b4.html"/>
-      <url>/posts/1b3c8b4.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="页面置换算法-OPT-FIFO-LRU-CLOCK"><a href="#页面置换算法-OPT-FIFO-LRU-CLOCK" class="headerlink" title="页面置换算法-OPT + FIFO + LRU+CLOCK"></a>页面置换算法-OPT + FIFO + LRU+CLOCK</h1><p><a href="https://blog.csdn.net/wang123456___/article/details/116331334">blog.csdn.net</a></p><h3 id="1-页面置换算法之OPT"><a href="#1-页面置换算法之OPT" class="headerlink" title="1.页面置换算法之OPT"></a>1.<a href="https://so.csdn.net/so/search?q=%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95&amp;spm=1001.2101.3001.7020">页面置换算法</a>之OPT</h3><h5 id="1-1-概念"><a href="#1-1-概念" class="headerlink" title="1.1 概念"></a>1.1 概念</h5><p>优先淘汰最长时间内不会被访问的页面，缺页率最小，性能最好，但是无法实现</p><h5 id="1-2-例题"><a href="#1-2-例题" class="headerlink" title="1.2 例题"></a>1.2 例题</h5><p>假设系统为某进程分配三个<a href="https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&amp;spm=1001.2101.3001.7020">内存</a>块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>7，0，1，2，0，3，0，4，2，3，0，3，2，1，2，0，1，7，0，1-<br><img src="https://minio.zwj326.space/MyBlog/55386e1e-bdf7-f318-504e-8365379b0ce4.png">-<br>步骤1：首先页面7进入内存块1-<br>步骤2：还有剩余的内存块，将页面0放入内存块2-<br>步骤3：还有剩余的内存块，将页面1放入内存块3-<br>步骤4：要访问页面2，内存块已经占满，此时进行淘汰。现在内存块中有：7，0，1。优先淘汰最长时间内不会被访问的页面，从当前访问的页面2，往后面进行寻找，最后出现的页面就是要淘汰的。0，3，0，4，2，3，0，3，2，1，2，0，1，7，0，1，即第一次找到的为0，第二次找到的为1，第三次找到的为7。因此淘汰的为7。如图用页面2替换页面7。-<br>步骤5：依次进行。。。。</p><h5 id="整个过程缺页中断-x3D-9次，页面置换-x3D-6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率-x3D-9-x2F-20-x3D-45"><a href="#整个过程缺页中断-x3D-9次，页面置换-x3D-6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率-x3D-9-x2F-20-x3D-45" class="headerlink" title="整个过程缺页中断=9次，页面置换=6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率=9/20=45%"></a>整个过程缺页中断=9次，页面置换=6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率=9/20=45%</h5><h3 id="2-页面置换算法之FIFO"><a href="#2-页面置换算法之FIFO" class="headerlink" title="2.页面置换算法之FIFO"></a>2.页面置换算法之<a href="https://so.csdn.net/so/search?q=FIFO&amp;spm=1001.2101.3001.7020">FIFO</a></h3><h5 id="2-1-概念"><a href="#2-1-概念" class="headerlink" title="2.1 概念"></a>2.1 概念</h5><p>优先淘汰最先进入内存的页面，实现简单，但是性能很差，可能出现belady异常</p><h5 id="2-2-例题"><a href="#2-2-例题" class="headerlink" title="2.2 例题"></a>2.2 例题</h5><p>假设系统为某进程分配三个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>3，2，1，0，3，2，4，3，2，1，0，4-<br><img src="https://minio.zwj326.space/MyBlog/93b3ca98-13c0-f5b9-5308-bde7986c0a13.png">-<br>步骤1：首先页面3进入内存块1-<br>步骤2：还有剩余的内存块，将页面2放入内存块2-<br>步骤3：还有剩余的内存块，将页面1放入内存块3-<br>步骤4：要访问页面0，内存块已经占满，此时进行淘汰。现在内存块中有：3-2-1,页面3是最早进入内存的，优先淘汰。因此用页面0替换页面。（与队列的先进先出类似）-<br>步骤5：依次进行。。。。</p><h5 id="缺页次数-x3D-9次，缺页率-x3D-9-x2F-12-x3D-75"><a href="#缺页次数-x3D-9次，缺页率-x3D-9-x2F-12-x3D-75" class="headerlink" title="缺页次数=9次，缺页率=9/12=75%"></a>缺页次数=9次，缺页率=9/12=75%</h5><h5 id="2-3-Belady异常"><a href="#2-3-Belady异常" class="headerlink" title="2.3 Belady异常"></a>2.3 Belady异常</h5><p>Belady异常：当进程分配的物理块数增大时，缺页次数不减反增的异常现象。-<br>只有FIFO算法产生 Belady异常。</p><h3 id="3-页面置换算法之LRU"><a href="#3-页面置换算法之LRU" class="headerlink" title="3.页面置换算法之LRU"></a>3.页面置换算法之LRU</h3><h5 id="3-1-概念"><a href="#3-1-概念" class="headerlink" title="3.1 概念"></a>3.1 概念</h5><p>优先淘汰最近最久没有访问的页面，性能很好，但是需要硬件支持，算法开销大</p><h5 id="3-2-例题"><a href="#3-2-例题" class="headerlink" title="3.2 例题"></a>3.2 例题</h5><p>假设系统为某进程分四个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>1，8，1，7，8，2，7，2，1，8，3，8，2，1，3，1，7，1，3，7-<br><img src="https://minio.zwj326.space/MyBlog/46536eac-a634-dbed-560b-a58a7aa4475b.png">-<br>步骤1：首先页面1进入内存块1-<br>步骤2：还有剩余的内存块，将页面8放入内存块2-<br>步骤3：页面1已经放入内存块1，直接跳过，无需置换-<br>步骤4：还有剩余的内存块，将页面7放入内存块3-<br>步骤5：页面8已经放入内存块2，直接跳过，无需置换-<br>步骤6：还有剩余的内存块，将页面7放入内存块3-<br>步骤6：还有剩余的内存块，将页面2放入内存块4-<br>步骤7：依次，页面7，2，1，8，无需置换-<br>步骤8：要访问页面3，内存块已经占满，此时进行淘汰。优先淘汰最近最久没有访问的页面：首先内存中有页面1，8，7，2。从页面3开始逆向扫描：依次为：8，1，2，7。最后被扫描的为页面7，因此被淘汰。页面3置换了页面7。-<br>步骤9：依次进行。。。</p><h3 id="4-页面置换算法之CLOCK-NRU"><a href="#4-页面置换算法之CLOCK-NRU" class="headerlink" title="4.页面置换算法之CLOCK(NRU)"></a>4.页面置换算法之CLOCK(NRU)</h3><h5 id="4-1-概念"><a href="#4-1-概念" class="headerlink" title="4.1 概念"></a>4.1 概念</h5><p>简单的CLOCK算法实现方法:为每个页面设置一个访问位，再将内存中的页面都通过链接指针链接成个循环队列。当某页被访问时，其访问位置为1。当需要淘汰一个页面时，只需检查页的访问位。如果是0，就选择该页换出;如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后，再进行第二轮扫描(第二轮扫描中一定会有访问位为0的页面，因此简单的CLOCK 算法选择一个淘汰页面最多会经过两轮扫描)</p><h5 id="4-2-例题"><a href="#4-2-例题" class="headerlink" title="4.2 例题"></a>4.2 例题</h5><p>假设系统为某进程分五个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>1，3，4，2，5，6，3，4，7-<br><img src="https://minio.zwj326.space/MyBlog/835e519c-630d-3bc2-88f3-c45b168567d8.png">-<br>注释：访问位=1：表示最近访问过；访问位=0，表示没有访问过。-<br>步骤1：依次将不重复的页面，加入内存，如图所示(上）。-<br>步骤2：当页面6进行访问时，此时已经没有内存块。进行淘汰：从队首开始扫描（1号页面)-<br>,如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后。如图所示(下）-<br><img src="https://minio.zwj326.space/MyBlog/4f8d7bdc-a3fa-8e1e-19f2-d1a9c0e4d16a.png">-<br>步骤3：再进行第二轮扫描，第一个访问位为0的页面，即被替换掉。因此页面6替换页面1。-<br>步骤4：接下来依次访问3号页，4号页，把其置为1。-<br>步骤5. 访问7号页，由于7号页不在内存中。从步骤3中置换的页面的下一个页面开始，进行扫面，找到一个访问号为0的页号，可以看到是2号页。然后用7号页替换2号页。-<br>步骤6：依次进行。。。-<br><img src="https://minio.zwj326.space/MyBlog/79fa2a45-95ff-6ea1-7fdf-1ec1cad0d74b.png"></p><p><a href="https://blog.csdn.net/wang123456___/article/details/116331334">查看原网页: blog.csdn.net</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学科基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 操作系统 </tag>
-            
-            <tag> 内存管理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Jwt基本原理</title>
       <link href="/posts/49869f5e.html"/>
       <url>/posts/49869f5e.html</url>
@@ -191,6 +164,33 @@
             <tag> 分布式 </tag>
             
             <tag> 消息中间件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>页面置换算法</title>
+      <link href="/posts/1b3c8b4.html"/>
+      <url>/posts/1b3c8b4.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="页面置换算法-OPT-FIFO-LRU-CLOCK"><a href="#页面置换算法-OPT-FIFO-LRU-CLOCK" class="headerlink" title="页面置换算法-OPT + FIFO + LRU+CLOCK"></a>页面置换算法-OPT + FIFO + LRU+CLOCK</h1><p><a href="https://blog.csdn.net/wang123456___/article/details/116331334">blog.csdn.net</a></p><h3 id="1-页面置换算法之OPT"><a href="#1-页面置换算法之OPT" class="headerlink" title="1.页面置换算法之OPT"></a>1.<a href="https://so.csdn.net/so/search?q=%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95&amp;spm=1001.2101.3001.7020">页面置换算法</a>之OPT</h3><h5 id="1-1-概念"><a href="#1-1-概念" class="headerlink" title="1.1 概念"></a>1.1 概念</h5><p>优先淘汰最长时间内不会被访问的页面，缺页率最小，性能最好，但是无法实现</p><h5 id="1-2-例题"><a href="#1-2-例题" class="headerlink" title="1.2 例题"></a>1.2 例题</h5><p>假设系统为某进程分配三个<a href="https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&amp;spm=1001.2101.3001.7020">内存</a>块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>7，0，1，2，0，3，0，4，2，3，0，3，2，1，2，0，1，7，0，1-<br><img src="https://minio.zwj326.space/MyBlog/55386e1e-bdf7-f318-504e-8365379b0ce4.png">-<br>步骤1：首先页面7进入内存块1-<br>步骤2：还有剩余的内存块，将页面0放入内存块2-<br>步骤3：还有剩余的内存块，将页面1放入内存块3-<br>步骤4：要访问页面2，内存块已经占满，此时进行淘汰。现在内存块中有：7，0，1。优先淘汰最长时间内不会被访问的页面，从当前访问的页面2，往后面进行寻找，最后出现的页面就是要淘汰的。0，3，0，4，2，3，0，3，2，1，2，0，1，7，0，1，即第一次找到的为0，第二次找到的为1，第三次找到的为7。因此淘汰的为7。如图用页面2替换页面7。-<br>步骤5：依次进行。。。。</p><h5 id="整个过程缺页中断-x3D-9次，页面置换-x3D-6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率-x3D-9-x2F-20-x3D-45"><a href="#整个过程缺页中断-x3D-9次，页面置换-x3D-6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率-x3D-9-x2F-20-x3D-45" class="headerlink" title="整个过程缺页中断=9次，页面置换=6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率=9/20=45%"></a>整个过程缺页中断=9次，页面置换=6次，因此缺页时未必发生页面置换。若有空闲内存块就不用页面置换。缺页率=9/20=45%</h5><h3 id="2-页面置换算法之FIFO"><a href="#2-页面置换算法之FIFO" class="headerlink" title="2.页面置换算法之FIFO"></a>2.页面置换算法之<a href="https://so.csdn.net/so/search?q=FIFO&amp;spm=1001.2101.3001.7020">FIFO</a></h3><h5 id="2-1-概念"><a href="#2-1-概念" class="headerlink" title="2.1 概念"></a>2.1 概念</h5><p>优先淘汰最先进入内存的页面，实现简单，但是性能很差，可能出现belady异常</p><h5 id="2-2-例题"><a href="#2-2-例题" class="headerlink" title="2.2 例题"></a>2.2 例题</h5><p>假设系统为某进程分配三个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>3，2，1，0，3，2，4，3，2，1，0，4-<br><img src="https://minio.zwj326.space/MyBlog/93b3ca98-13c0-f5b9-5308-bde7986c0a13.png">-<br>步骤1：首先页面3进入内存块1-<br>步骤2：还有剩余的内存块，将页面2放入内存块2-<br>步骤3：还有剩余的内存块，将页面1放入内存块3-<br>步骤4：要访问页面0，内存块已经占满，此时进行淘汰。现在内存块中有：3-2-1,页面3是最早进入内存的，优先淘汰。因此用页面0替换页面。（与队列的先进先出类似）-<br>步骤5：依次进行。。。。</p><h5 id="缺页次数-x3D-9次，缺页率-x3D-9-x2F-12-x3D-75"><a href="#缺页次数-x3D-9次，缺页率-x3D-9-x2F-12-x3D-75" class="headerlink" title="缺页次数=9次，缺页率=9/12=75%"></a>缺页次数=9次，缺页率=9/12=75%</h5><h5 id="2-3-Belady异常"><a href="#2-3-Belady异常" class="headerlink" title="2.3 Belady异常"></a>2.3 Belady异常</h5><p>Belady异常：当进程分配的物理块数增大时，缺页次数不减反增的异常现象。-<br>只有FIFO算法产生 Belady异常。</p><h3 id="3-页面置换算法之LRU"><a href="#3-页面置换算法之LRU" class="headerlink" title="3.页面置换算法之LRU"></a>3.页面置换算法之LRU</h3><h5 id="3-1-概念"><a href="#3-1-概念" class="headerlink" title="3.1 概念"></a>3.1 概念</h5><p>优先淘汰最近最久没有访问的页面，性能很好，但是需要硬件支持，算法开销大</p><h5 id="3-2-例题"><a href="#3-2-例题" class="headerlink" title="3.2 例题"></a>3.2 例题</h5><p>假设系统为某进程分四个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>1，8，1，7，8，2，7，2，1，8，3，8，2，1，3，1，7，1，3，7-<br><img src="https://minio.zwj326.space/MyBlog/46536eac-a634-dbed-560b-a58a7aa4475b.png">-<br>步骤1：首先页面1进入内存块1-<br>步骤2：还有剩余的内存块，将页面8放入内存块2-<br>步骤3：页面1已经放入内存块1，直接跳过，无需置换-<br>步骤4：还有剩余的内存块，将页面7放入内存块3-<br>步骤5：页面8已经放入内存块2，直接跳过，无需置换-<br>步骤6：还有剩余的内存块，将页面7放入内存块3-<br>步骤6：还有剩余的内存块，将页面2放入内存块4-<br>步骤7：依次，页面7，2，1，8，无需置换-<br>步骤8：要访问页面3，内存块已经占满，此时进行淘汰。优先淘汰最近最久没有访问的页面：首先内存中有页面1，8，7，2。从页面3开始逆向扫描：依次为：8，1，2，7。最后被扫描的为页面7，因此被淘汰。页面3置换了页面7。-<br>步骤9：依次进行。。。</p><h3 id="4-页面置换算法之CLOCK-NRU"><a href="#4-页面置换算法之CLOCK-NRU" class="headerlink" title="4.页面置换算法之CLOCK(NRU)"></a>4.页面置换算法之CLOCK(NRU)</h3><h5 id="4-1-概念"><a href="#4-1-概念" class="headerlink" title="4.1 概念"></a>4.1 概念</h5><p>简单的CLOCK算法实现方法:为每个页面设置一个访问位，再将内存中的页面都通过链接指针链接成个循环队列。当某页被访问时，其访问位置为1。当需要淘汰一个页面时，只需检查页的访问位。如果是0，就选择该页换出;如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后，再进行第二轮扫描(第二轮扫描中一定会有访问位为0的页面，因此简单的CLOCK 算法选择一个淘汰页面最多会经过两轮扫描)</p><h5 id="4-2-例题"><a href="#4-2-例题" class="headerlink" title="4.2 例题"></a>4.2 例题</h5><p>假设系统为某进程分五个内存块，并考虑到有一个页面号引用串。依次访问以下页面：-<br>1，3，4，2，5，6，3，4，7-<br><img src="https://minio.zwj326.space/MyBlog/835e519c-630d-3bc2-88f3-c45b168567d8.png">-<br>注释：访问位=1：表示最近访问过；访问位=0，表示没有访问过。-<br>步骤1：依次将不重复的页面，加入内存，如图所示(上）。-<br>步骤2：当页面6进行访问时，此时已经没有内存块。进行淘汰：从队首开始扫描（1号页面)-<br>,如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后。如图所示(下）-<br><img src="https://minio.zwj326.space/MyBlog/4f8d7bdc-a3fa-8e1e-19f2-d1a9c0e4d16a.png">-<br>步骤3：再进行第二轮扫描，第一个访问位为0的页面，即被替换掉。因此页面6替换页面1。-<br>步骤4：接下来依次访问3号页，4号页，把其置为1。-<br>步骤5. 访问7号页，由于7号页不在内存中。从步骤3中置换的页面的下一个页面开始，进行扫面，找到一个访问号为0的页号，可以看到是2号页。然后用7号页替换2号页。-<br>步骤6：依次进行。。。-<br><img src="https://minio.zwj326.space/MyBlog/79fa2a45-95ff-6ea1-7fdf-1ec1cad0d74b.png"></p><p><a href="https://blog.csdn.net/wang123456___/article/details/116331334">查看原网页: blog.csdn.net</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学科基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+            <tag> 内存管理 </tag>
             
         </tags>
       
